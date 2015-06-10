@@ -1,0 +1,33 @@
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<dom-module id="text-enter">
+    <template>
+        <textarea>{{greeting}}</textarea>
+    </template>
+</dom-module>
+
+<script>
+  myElement = Polymer ({
+     is: "text-enter",  
+     properties:{
+     	greeting:{
+     		type:String,
+     		value:"Hello"
+     	},
+     	name:{
+     		type: String,
+     		value:"Daniel"
+     	}
+	
+     },
+
+    listeners: {
+      'tap': 'regularTap',
+    },
+
+    regularTap: function(e) {
+      alert("Thank you for tapping");
+    },
+    
+  });
+</script>
