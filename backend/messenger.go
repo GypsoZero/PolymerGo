@@ -25,6 +25,13 @@ type Messages struct {
 
 func init() {
 	endpoints.RegisterService(MessageAPI{}, "messages", "v1", "messages API", true)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	info := api.MethodByName("Add").Info()
+	info.name, info.HTTPMethod, info.Path = "addMesage", "POST", "messages"
+
 	endpoints.HandleHTTP()
 	// http.HandleFunc("/messages", listMessages)
 }
