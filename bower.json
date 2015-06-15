@@ -1,9 +1,10 @@
 {
-  "name": "polymer-gopher",
+  "name": "tutorial",
   "version": "0.0.0",
   "authors": [
     "danielthireau <daniel.thireau@business-cloud.fr>"
   ],
+  "description": "tutorial project",
   "main": "index.html",
   "license": "MIT",
   "ignore": [
@@ -14,8 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "bower": "*",
-    "install": "~1.0.4",
     "polymer": "Polymer/polymer#1.0.3"
   }
 }
